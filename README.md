@@ -7,7 +7,7 @@ Lightweight 8×8 digit classifier implemented from scratch in Python. It uses a 
 - Requirements: Python 3.9+ (no external dependencies).
 - Clone and enter the project:
   ```bash
-  git clone https://github.com/lionel-lbr/DigitClassifier.git && cd DigitClassifier
+  git clone https://github.com/lionel-lbr/toy-digit-classifier.git && cd toy-digit-classifier
   ```
 - (Optional) Use a virtual environment if you want to keep things isolated.
 
@@ -67,3 +67,8 @@ python src/main.py predict --model model.json --input digit_4_unknown_3.txt --re
 ```
 
 ## Future evolutions
+
+To correctly handle degraded digits (and move beyond memorization), the model needs more capacity and richer feature extraction. Two natural directions:
+
+- Introduce hidden layers and treat the network as a small MLP (e.g., Multilayer Perceptron with one or two dense layers with nonlinear activations) so it can learn abstractions beyond the raw pixel patterns.
+- Move to a simple CNN (Convolutional Neural Network) with convolution + pooling blocks to capture local spatial structure and invariance to small degradations or noise.\*\*\*

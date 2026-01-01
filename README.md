@@ -1,6 +1,6 @@
 # DigitClassifier
 
-Lightweight 8×8 digit classifier implemented from scratch in Python. It uses a single-layer softmax model trained on the bundled `data-sets/digit_*.txt` bitmaps and provides a small CLI to train and predict.
+Lightweight 8×8 digit classifier implemented from scratch in Python. It uses a single-layer softmax model trained on the bundled `data-sets/digit-samples/digit_*.txt` bitmaps and provides a small CLI to train and predict.
 
 ## Setup
 
@@ -27,13 +27,13 @@ Optional training controls:
 Predict a digit using a saved model and an 8×8 text file of 0/1 values:
 
 ```bash
-python src/main.py predict --model model.json --input digit_4.txt
+python src/main.py predict --model model.json --input digit-samples/digit_4.txt
 ```
 
 Render the input before predicting:
 
 ```bash
-python src/main.py predict --model model.json --input digit_4.txt --render
+python src/main.py predict --model model.json --input digit-samples/digit_4.txt --render
 ```
 
 Notes:

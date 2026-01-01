@@ -58,7 +58,7 @@ def load_dataset() -> Tuple[List[List[int]], List[List[int]]]:
     images: List[List[int]] = []
     hot_vectors: List[List[int]] = []
     for digit in range(NUM_CLASSES):
-        filename = f"digit_{digit}.txt"
+        filename = f"digit-samples/digit_{digit}.txt"
         pixels = _load_digit_path(_data_dir() / filename)
         images.append(pixels)
         hot_vectors.append(_one_hot(digit))

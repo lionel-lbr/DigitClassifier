@@ -51,3 +51,19 @@ The loss minimized is cross-entropy, optimized with stochastic gradient descent;
 Early stopping monitors average loss with a patience of five epochs by default. Although training accuracy typically reaches 100% after roughly 50 epochs, additional epochs (often into the hundreds) reduce the loss further before patience halts training.
 
 Because the dataset contains only one exemplar per digit, the model largely memorizes these patterns; it will often classify heavily degraded versions of the provided digits (many 1s flipped to 0s) as the originals.
+
+For example try the following command they'll all output 4.
+
+```bash
+python src/main.py predict --model model.json --input digit_4_unknown_1.txt --render
+```
+
+```bash
+python src/main.py predict --model model.json --input digit_4_unknown_2.txt --render
+```
+
+```bash
+python src/main.py predict --model model.json --input digit_4_unknown_3.txt --render
+```
+
+## Future evolutions

@@ -1,4 +1,4 @@
-# DigitClassifier
+# Toy Digit Classifier
 
 Lightweight 8×8 digit classifier implemented from scratch in Python. It uses a single-layer softmax model trained on the bundled `data-sets/digit-samples/digit_*.txt` bitmaps and provides a small CLI to train and predict.
 
